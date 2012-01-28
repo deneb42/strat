@@ -5,10 +5,10 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -50,10 +50,16 @@ public class ClientActivity extends Activity {
 				System.out.println("IO exception");
 				e.printStackTrace();
 			}
-			
+			launchUI();
+			finish();
 		}
 	});
         
         
+    }
+    
+    private void launchUI() {
+    	Intent intent = new Intent(this, GameUIActivity.class);
+		startActivity(intent);
     }
 }
