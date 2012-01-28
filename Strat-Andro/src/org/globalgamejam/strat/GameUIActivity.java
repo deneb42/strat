@@ -1,19 +1,20 @@
 package org.globalgamejam.strat;
 
-import android.app.Activity;
-import android.content.pm.FeatureInfo;
 import android.os.Bundle;
-import android.view.Window;
+
+import com.badlogic.gdx.backends.android.AndroidApplication;
 
 
-public class GameUIActivity extends Activity {
-	/** Called when the activity is first created. */
+public class GameUIActivity extends AndroidApplication {
 	
 	@Override
-	public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        
-        setContentView(R.layout.gui_layout);
-        
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		initialize(new GameRenderer(), false);
 	}
+	/** Called when the activity is first created. */
+	
+	
 }

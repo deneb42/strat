@@ -12,11 +12,13 @@ public final class R {
     }
     public static final class drawable {
         public static final int ic_launcher=0x7f020000;
+        public static final int logo=0x7f020001;
     }
     public static final class id {
         public static final int bConnect=0x7f050005;
         public static final int etIpDest=0x7f050002;
         public static final int etPortDest=0x7f050004;
+        public static final int gameView=0x7f050006;
         public static final int titre=0x7f050000;
         public static final int tvIpDest=0x7f050001;
         public static final int tvPortDest=0x7f050003;
